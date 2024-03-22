@@ -29,12 +29,14 @@ h1 {
     font-size: 2.5rem;
     line-height: 1em;
     font-weight: bold;
+    letter-spacing: -0.028em;
 }
 
 h2 {
     font-size: 2rem;
     line-height: 1.25em;
     font-weight: bold;
+    letter-spacing: -0.031em;
 }   
 
 h3 {
@@ -260,27 +262,19 @@ h3 {
 }
 
 .project {
-    display: grid;
-    grid-template-columns: minmax(auto, 686px);
-    grid-template-rows: auto auto auto auto;
     text-align: left;
 }
 
 .project_img{
-    grid-column: 1 / -1;
-    grid-row: 1 / 2;
+    margin-bottom: 1.25em;
 }
 
 .project_title {
-    grid-column: 1 / -1;
-    grid-row: 2 / 3;
     text-transform: uppercase;
     margin-bottom: .3em;
 }
 
 .project_skills {
-    grid-column: 1 / -1;
-    grid-row: 3 / 4;
     display: flex;
     gap: 1.25em;
     margin-bottom: 1em;
@@ -290,8 +284,6 @@ h3 {
 }
 
 .project_active {
-    grid-column: 1 / -1;
-    grid-row: 4 / -1;
     display: flex;
     gap: 1.875em;
 }
@@ -484,4 +476,104 @@ h3 {
     
 
 
+}
+
+
+@media (min-width: 1440px)
+{
+    h1 {
+        font-size: 5.5rem;
+    }
+    h2 {
+        font-size: 3rem;
+    }
+ 
+    .header {
+        background: url(../assets/images/image-profile-desktop.webp) top right 11.4% no-repeat;
+        background-size: contain;
+        padding: 2.43em 11.4% 0;
+
+
+    }
+
+    .hero {
+        padding-bottom: 7.18em;
+        margin-bottom: 6.5em;
+    }
+
+    .hero_img-circle{
+        right: calc(11.4% + 21em);
+        bottom: 4.375em;
+    }
+
+    .hero_img-rings
+    {
+        transform: translate(-20%, 50%);
+    }
+
+    .skills {
+        grid-template-columns: 33% 33% 33%;
+        grid-row-gap:3.6em;
+
+        padding: 4.5em 11.4%  8.75em;
+    }
+
+
+    .projects {
+        padding: 0 11.4% 8.6em;
+    }
+
+    .project {
+        display: grid;
+        grid-template-columns: minmax(auto, 686px);
+        grid-template-rows: auto auto auto auto;
+    }
+
+    .project_img {
+        grid-column: 1 / -1;
+        grid-row: 1 / 2;
+        margin-bottom: 0;
+    }
+
+    .project_active {
+        opacity: 0%;
+        grid-column: 1 / -1;
+        grid-row: 1 / 2;
+        justify-content: center;
+        align-items: center;
+        background-color: rgba(0,0,0,50%);
+        transition: opacity 300ms;
+        cursor: pointer;
+    }   
+    .project:hover .project_active {
+        opacity: 100%;
+    }
+    
+
+    .footer {
+        padding: 5.25em 11.4% 5.75em;
+    }
+    .footer_top {
+        text-align: left;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 5.75em;
+    }
+
+    .footer_col-1 {
+        margin-left: 0;
+    }
+
+    .form {
+        margin-right: 0;
+    }
+
+    .footer_bottom {
+        padding-top: 2.93em;
+    }
+    .footer_img-rings {
+        transform:translate(-65%, 60%);
+    }
+
+    
 }
