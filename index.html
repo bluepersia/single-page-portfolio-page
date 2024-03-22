@@ -22,9 +22,13 @@
       </ul>
     </div>
     <div class="hero">
+      <img src="./assets/images/image-profile-mobile.webp" class="hero_img-mobile"/>
       <h1 class="title">Nice to meet you!<br/>I'm Adam Keyes.</h1>
       <p class="hero_body">Based in the UK, I’m a front-end developer passionate about building accessible web apps that users love.</p>
       <button class="btn">Contact me</button>
+
+      <img src="./assets/images/pattern-rings.svg" class="hero_img-rings" />
+      <img src="./assets/images/pattern-circle.svg" class="hero_img-circle"/>
     </div>
   </header>
 
@@ -55,15 +59,20 @@
         <h2 class="skill_title">Sass</h2>
         <p class="skill_body">3 Years Experience</p>
       </div>
+      <img src="./assets/images/pattern-rings.svg" class="skills_img-rings"/>
     </section>
     <section class="projects">
+      <div class="projects_top">
+        <h1 class="projects_title">Projects</h1>
+        <button class="btn projects_btn-contact">Contact me</button>
+      </div>
+      <div class="projects_list">
       <div class="project">
-        <div class="project_inner">
+          <img class="project_img" src="./assets/images/thumbnail-project-1-small.webp"/>
           <div class="project_active">
             <button class="btn">View project</button>
             <button class="btn">View code</button>
           </div>
-        </div>
         <h3 class="project_title">Design portfolio</h3>
         <div class="project_skills">
           <p>HTML</p>
@@ -71,12 +80,11 @@
         </div>
       </div>
       <div class="project">
-        <div class="project_inner">
+          <img class="project_img" src="./assets/images/thumbnail-project-2-small.webp"/>
           <div class="project_active">
             <button class="btn">View project</button>
             <button class="btn">View code</button>
           </div>
-        </div>
         <h3 class="project_title">E-learning landing page</h3>
         <div class="project_skills">
           <p>HTML</p>
@@ -84,12 +92,11 @@
         </div>
       </div>
       <div class="project">
-        <div class="project_inner">
+          <img class="project_img" src="./assets/images/thumbnail-project-3-small.webp"/>
           <div class="project_active">
             <button class="btn">View project</button>
             <button class="btn">View code</button>
           </div>
-        </div>
         <h3 class="project_title">Todo Web App</h3>
         <div class="project_skills">
           <p>HTML</p>
@@ -98,12 +105,11 @@
         </div>
       </div>
       <div class="project">
-        <div class="project_inner">
+          <img class="project_img" src="./assets/images/thumbnail-project-4-small.webp"/>
           <div class="project_active">
             <button class="btn">View project</button>
             <button class="btn">View code</button>
           </div>
-        </div>
         <h3 class="project_title">Entertainment Web App</h3>
         <div class="project_skills">
           <p>HTML</p>
@@ -112,12 +118,11 @@
         </div>
       </div>
       <div class="project">
-        <div class="project_inner">
+          <img class="project_img" src="./assets/images/thumbnail-project-5-small.webp"/>
           <div class="project_active">
             <button class="btn">View project</button>
             <button class="btn">View code</button>
           </div>
-        </div>
         <h3 class="project_title">Memory Game</h3>
         <div class="project_skills">
           <p>HTML</p>
@@ -126,12 +131,11 @@
         </div>
       </div>
       <div class="project">
-        <div class="project_inner">
+          <img class="project_img" src="./assets/images/thumbnail-project-6-small.webp"/>
           <div class="project_active">
             <button class="btn">View project</button>
             <button class="btn">View code</button>
           </div>
-        </div>
         <h3 class="project_title">Art Gallery Showcase</h3>
         <div class="project_skills">
           <p>HTML</p>
@@ -139,6 +143,7 @@
           <p>Javascript</p>
         </div>
       </div>
+    </div>
     </section>
   </main>
 
@@ -150,19 +155,20 @@
     </div>
     <form class="form">
       <div class="textfield_wrapper">
-        <input type="text" class="textfield" placeholder="Name"/>
+        <input type="text" class="textfield" name="name" placeholder="Name"/>
         <p class="textfield_error"></p>
       </div>
       <div class="textfield_wrapper">
-        <input type="text" class="textfield" placeholder="Email address"/>
+        <input type="text" class="textfield" name="email" placeholder="Email address"/>
         <p class="textfield_error"></p>
       </div>
       <div class="textfield_wrapper">
-        <textarea class="textfield" placeholder="Name"></textarea>
+        <textarea class="textfield" name="message" placeholder="Message"></textarea>
         <p class="textfield_error"></p>
       </div>
       <button type="submit" class="btn form_btn">Send message</button>
     </form>
+    <img src="./assets/images/pattern-rings.svg" class="footer_img-rings"/>
   </div>
   <div class="footer_bottom">
     <h2 class="logo">adamkeyes</h2>
@@ -174,53 +180,6 @@
     </ul>
   </div>
   </footer>
-
-  Projects
-
-  Contact me
-
-  Design portfolio
-  HTML CSS
-  View project
-  View code
-
-  E-learning landing page
-  HTML CSS
-  View project
-  View code
-
-  Todo web app
-  HTML CSS JavaScript
-  View project
-  View code
-
-  Entertainment web app
-  HTML CSS JavaScript
-  View project
-  View code
-
-  Memory Game
-  HTML CSS JavaScript
-  View project
-  View code
-
-  Art gallery showcase
-  HTML CSS JavaScript
-  View project
-  View code
-
-  Contact
-
-  I would love to hear about your project and how I could help. Please 
-  fill in the form, and I’ll get back to you as soon as possible.
-
-  Name
-  Email
-  Message
-
-  Send message
-
-  adamkeyes
 
 </body>
 </html>
