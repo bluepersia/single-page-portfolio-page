@@ -155,15 +155,15 @@
     </div>
     <form class="form">
       <div class="textfield_wrapper">
-        <input type="text" class="textfield" name="name" placeholder="Name"/>
+        <input type="text" class="textfield" name="name" placeholder="Name" data-required={true} data-minlength="2" data-maxlength="40"/>
         <p class="textfield_error"></p>
       </div>
       <div class="textfield_wrapper">
-        <input type="text" class="textfield" name="email" placeholder="Email address"/>
+        <input type="text" class="textfield" name="email" placeholder="Email address" data-required={true} data-isemail={true}/>
         <p class="textfield_error"></p>
       </div>
       <div class="textfield_wrapper">
-        <textarea class="textfield" name="message" placeholder="Message"></textarea>
+        <textarea class="textfield" name="message" placeholder="Message" data-required={true} data-minlength="2"></textarea>
         <p class="textfield_error"></p>
       </div>
       <button type="submit" class="btn form_btn">Send message</button>
@@ -181,5 +181,7 @@
   </div>
   </footer>
 
+
+  <script src="app.js"></script>
 </body>
 </html>
