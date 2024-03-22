@@ -1,0 +1,131 @@
+:root 
+{
+    --color-1: hsl(0, 0%, 8%);
+    --color-2: hsl(153, 71%, 59%);
+    --color-3: hsl(0, 0%, 14%);
+    --color-4: hsl(0, 0%, 85%);
+    --color-5: hsl(0, 0%, 100%);
+}
+
+@font-face {
+    font-family: Space-Grotesk;
+    src: url(../assets/fonts/SpaceGrotesk-VariableFont_wght.ttf);
+}
+
+
+
+body {
+    margin: 0;
+    font-family: Space-Grotesk;
+    font-weight: 500;
+    line-height: 1.75em;
+    background-color: var(--color-1);
+    color: var(--color-4);
+}
+
+h1 {
+    font-size: 2.5rem;
+    line-height: 1em;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 2rem;
+    line-height: 1.25em;
+    font-weight: bold;
+}   
+
+h3 {
+    font-size: 1.5rem;
+    line-height: 1.33em;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+* :first-child 
+{
+    margin-top: 0;
+}
+
+* :last-child
+{
+    margin-bottom: 0;
+}
+
+
+
+
+.btn {
+    padding-bottom: 0.625em;
+    font-weight: bold;
+    font-family: inherit;
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: .143em;
+    border-bottom: solid 2px var(--color-2);
+    transition: color 300ms;
+}
+
+.btn:hover
+{
+    color: var(--color-2);
+}
+
+
+.textfield_wrapper {
+    width: fit-content;
+    position: relative;
+}
+
+
+.textfield_wrapper.invalid {
+    margin-bottom: 1em;
+}
+.textfield 
+{
+    padding: 0 1.5em 1em;
+    font-weight: 500;
+    font-family: inherit;
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: -.013em;
+    border:none;
+    border-bottom: 1px solid var(--color-5);
+    color: var(--color-5);
+    background:none;
+    transition: border-bottom-color 300ms;
+}
+
+
+
+.textfield:focus 
+{
+    outline: none;
+    border-bottom-color: var(--color-2);
+}
+
+
+.textfield_wrapper.invalid .textfield {
+    border-bottom-color: #FF6F5B;
+}
+
+
+.textfield_error {
+    opacity: 0%;
+    text-align: right;
+    color: #FF6F5B;
+    font-size: 12px;
+    font-style: italic;
+    font-weight: 500;
+    margin-top: 0;
+    transition: opacity 300ms;
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    transform: translateY(100%);
+}
+.textfield_wrapper.invalid .textfield_error {
+    opacity: 100%;
+}
