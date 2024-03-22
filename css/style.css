@@ -64,8 +64,11 @@ h3 {
     font-size: 16px;
     text-transform: uppercase;
     letter-spacing: .143em;
+    border:none;
     border-bottom: solid 2px var(--color-2);
     transition: color 300ms;
+    background:none;
+    color: var(--color-5);
 }
 
 .btn:hover
@@ -83,9 +86,26 @@ h3 {
 .textfield_wrapper.invalid {
     margin-bottom: 1em;
 }
+.textfield_wrapper.invalid:after
+{
+    content: '!';
+    width: 24px;
+    height: 24px;
+    background-image: url(../assets/images/);
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0px;
+    border-radius: 50%;
+    border: solid 1px #FF6F5B;
+    color: #FF6F5B;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .textfield 
 {
-    padding: 0 1.5em 1em;
+    padding: 1em 1.5em;
     font-weight: 500;
     font-family: inherit;
     font-size: 16px;
@@ -128,4 +148,13 @@ h3 {
 }
 .textfield_wrapper.invalid .textfield_error {
     opacity: 100%;
+}
+
+.textfield::placeholder {
+    color: rgba(255, 255, 255, 50%);
+}
+
+
+.logo {
+    font-size: 1.5rem;
 }
