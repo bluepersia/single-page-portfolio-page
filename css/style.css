@@ -63,7 +63,7 @@ h3 {
     padding-bottom: 0.625em;
     font-weight: bold;
     font-family: inherit;
-    font-size: 16px;
+    font-size: 1rem;
     text-transform: uppercase;
     letter-spacing: .143em;
     border:none;
@@ -111,7 +111,7 @@ h3 {
     padding: 0 1.5em 1em;
     font-weight: 500;
     font-family: inherit;
-    font-size: 16px;
+    font-size: 1rem;
     text-transform: uppercase;
     letter-spacing: -.013em;
     border:none;
@@ -139,7 +139,7 @@ h3 {
     opacity: 0%;
     text-align: right;
     color: #FF6F5B;
-    font-size: 12px;
+    font-size: .75rem;
     font-style: italic;
     font-weight: 500;
     margin-top: 0;
@@ -194,6 +194,10 @@ h3 {
 }
 
 
+.title .underline {
+    border-bottom: 4px solid var(--color-2);
+}
+
 .hero_img-rings {
     position: absolute;
     top: 7em;
@@ -244,6 +248,10 @@ h3 {
     align-items:start;
     justify-content: space-between;
 }
+.projects_title 
+{
+    margin-top: 0;
+}
 
 .projects_list {
     display: flex;
@@ -267,14 +275,15 @@ h3 {
     grid-column: 1 / -1;
     grid-row: 2 / 3;
     text-transform: uppercase;
-    margin-bottom: 0;
+    margin-bottom: .3em;
 }
 
 .project_skills {
     grid-column: 1 / -1;
     grid-row: 3 / 4;
     display: flex;
-    gap: 1.125em;
+    gap: 1.25em;
+    margin-bottom: 1em;
 }
 .project_skills > * {
     margin: 0;
@@ -304,6 +313,12 @@ h3 {
 .footer_top {
     margin-bottom: 5.43em;
     position: relative;
+}
+
+.footer_top > * {
+    max-width: 445px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 
@@ -342,4 +357,131 @@ h3 {
 .footer_bottom {
     border-top: 1px solid var(--color-4);
     padding: 2.43em 0 3.75em;
+}
+.footer_bottom > * {
+    margin: 0;
+}
+
+.social_icon {
+    cursor: pointer;
+}
+.social_icon path 
+{
+    transition: fill 300ms;
+}
+
+.social_icon:hover path { 
+    fill: var(--color-2)
+}
+
+
+@media (min-width: 768px)
+{
+    body {
+        font-size: 1.125rem;
+        line-height: 1.75em;
+    }
+    h1 {
+        font-size: 4.5rem;
+        line-height: 1em;
+    }
+
+    h2 
+    {
+        font-size: 3rem;
+        line-height:1.16em;
+    }
+
+
+    .header {
+        background: url(../assets/images/image-profile-tablet.webp) top right no-repeat;
+        background-size: contain;
+        padding-bottom: 0em;
+        position: relative;
+        padding-top: 1.81em;
+        padding-left: 3.9%;
+        padding-right: 3.9%;
+    }
+
+    .header_top 
+    {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .header_top > * {
+        margin: 0;
+    }
+
+    .hero {
+        max-width: 706px;
+        width: 57.9%;
+        margin-top: 0;
+        text-align: left;
+        margin-bottom: 3.75em;
+        position:initial;
+    }
+    .hero_img-mobile {
+        display: none;
+    }
+
+    .hero_img-circle {
+        right: 0em;
+        bottom: 0px;
+        transform: translate(45%, 0%);
+    }
+
+    .hero_img-rings {
+        left: 0px;
+        top: 0px;
+        transform: translate(-50%, 50%);
+    }
+
+
+    .skills {
+        text-align: left;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: auto auto auto;
+        padding: 3.25em 3.9% 6.25em;
+        border-bottom: 0;
+    }
+
+    .skills_img-rings {
+        bottom:3em;
+        transform: translate(65%);
+    }
+    .projects {
+    padding: 0em 3.9% 6.25em;
+    }
+    .projects_list {
+        display: grid;
+        grid-template-columns: minmax(auto, 686px) minmax(auto, 686px);
+    }
+
+
+    .footer {
+        padding: 3.75em 3.9% 2.5em;
+    }
+
+    .footer_top {
+        margin-bottom: 5.75em;
+    }
+
+    .footer_img-rings {
+        transform:translate(-70%, 50%);
+    }
+
+    .footer_bottom {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 1.875em 0 0;
+    }
+
+
+    
+    
+
+
 }
